@@ -19,3 +19,26 @@ $france -> print();
 $italie = new Country ("Italie");
 
 $italie -> print();
+
+//Nom = Italie
+//Surface = 0
+//Population = 0
+
+// Atribut une valeur à l'attribut d'instance Nom
+//Non l’ensemble des attributs d’instance de cet objet n'ont pas les valeurs désirées
+//Oui, on aurait du appeller un constructeur avec trois paramètres
+
+//Q4
+
+$espagne = new Country ();
+
+$belgique = new Country ("Belgique",224199.2);
+
+$espagne -> print();
+
+$belgique -> print();
+
+//Les attributs de l'objet espagne sont initialisé a 0 pour les float et les int et les string sont initialisé en Unknown
+//alors que pour la Belgique les paramètres sont bien initialisé sauf pour la population qui est a 0
+
+
