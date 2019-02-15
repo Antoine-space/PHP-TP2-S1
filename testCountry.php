@@ -41,4 +41,12 @@ $belgique -> print();
 //Les attributs de l'objet espagne sont initialisé a 0 pour les float et les int et les string sont initialisé en Unknown
 //alors que pour la Belgique les paramètres sont bien initialisé sauf pour la population qui est a 0
 
+//Q5
+
+$copiefrance = new country();
+
+
+$copiefrance -> print($france);
+$france -> print();
+
 
