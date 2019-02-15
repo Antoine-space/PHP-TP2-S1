@@ -46,7 +46,7 @@ $belgique -> print();
 $copiefrance = new country();
 
 
-$copiefrance -> print($france);
+$copiefrance -> print();
 $france -> print();
 
 //on observe que si on a aucun parametre dans l'objet copie france on a 0 et UnKnown alors que dans l'objet france on est le bon paramètre
@@ -54,14 +54,24 @@ $france -> print();
 
 //Q6
 
-$copiefrance -> setName("France");
-$copiefrance -> setsurface(600000.0);
-$copiefrance -> setpopulation(66600000);
+
+$copiefrance -> setName($france -> getName());
+$copiefrance -> setsurface($france -> getSurface());
+$copiefrance -> setpopulation($france -> getPopulation());
 
 $copiefrance -> print();
 
-$copiefrance -> getPopulation();
-$copiefrance -> getSurface();
-$copiefrance -> getName();
+//Q7
 
-$copiefrance -> print();
+function copie(Country $country): Country {
+    $copie =new Country ();
+
+    $copie -> setName($country -> getName());
+    $copie -> setsurface($country -> getSurface());
+    $copie -> setpopulation($country -> getPopulation());
+
+    return $copie;
+}
+
+copie($belgique)-> print();
+//$a -> print();
