@@ -49,4 +49,19 @@ $copiefrance = new country();
 $copiefrance -> print($france);
 $france -> print();
 
+//on observe que si on a aucun parametre dans l'objet copie france on a 0 et UnKnown alors que dans l'objet france on est le bon paramètre
+//Il faudrait donc initialisé des paramètre a copiefrance
 
+//Q6
+
+$copiefrance -> setName("France");
+$copiefrance -> setsurface(600000.0);
+$copiefrance -> setpopulation(66600000);
+
+$copiefrance -> print();
+
+$copiefrance -> getPopulation();
+$copiefrance -> getSurface();
+$copiefrance -> getName();
+
+$copiefrance -> print();
