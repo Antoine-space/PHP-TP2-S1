@@ -75,3 +75,15 @@ function copie(Country $country): Country {
 
 copie($belgique)-> print();
 //$a -> print();
+
+//Q8
+function printCountry(Country $country){
+    $nom = $country -> getName();
+    $surface = $country -> getSurface();
+    $popu = $country -> getPopulation();
+    echo "$nom \n";
+    echo "   surface : $surface \n";
+    echo "   population : $popu \n";
+}
+
+printCountry($italie);
